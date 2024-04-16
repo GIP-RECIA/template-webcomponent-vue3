@@ -1,0 +1,100 @@
+{
+  "name": "@gip-recia/xxx",
+  "description": "",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "gip-recia"
+  ],
+  "homepage": "https://github.com/GIP-RECIA/xxx",
+  "bugs": {
+    "url": "https://github.com/GIP-RECIA/xxx/issues"
+  },
+  "license": "Apache-2.0",
+  "contributors": [],
+  "main": "./dist/xxx.umd.cjs",
+  "module": "./dist/xxx.js",
+  "exports": {
+    ".": {
+      "import": "./dist/xxx.js",
+      "require": "./dist/xxx.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GIP-RECIA/xxx.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "run-p type-check \"build-only {@}\" -- && yarn build:min",
+    "build:min": "npm exec terser -- -c -m --module dist/xxx.js > dist/xxx.min.js",
+    "clean": "find . -name node_modules -type d -prune -o -name cache -type d -o -name dist -type d | xargs rm -rf",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "test:e2e": "npx playwright install && playwright test",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format:check": "prettier --check src/",
+    "format": "prettier --write src/",
+    "prepare": "husky install",
+    "predev": "dotenv-checker --schema .env.example --env .env.local",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@intlify/unplugin-vue-i18n": "^4.0.0",
+    "@playwright/test": "^1.43.1",
+    "@rushstack/eslint-patch": "^1.10.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node20": "^20",
+    "@types/jsdom": "^21",
+    "@types/lodash.debounce": "^4",
+    "@types/lodash.throttle": "^4",
+    "@types/node": "^20",
+    "@types/regenerator-runtime": "^0",
+    "@uportal/open-id-connect": "^1.40.2",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/test-utils": "^2.4.5",
+    "@vue/tsconfig": "^0.5.1",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "dotenv-checker": "^1.1.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-playwright": "^1.6.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "husky": "8.0.3",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "^3.2.5",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.75.0",
+    "standard-version": "^9.5.0",
+    "terser": "^5.30.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vitest": "^1.5.0",
+    "vue": "^3.4.22",
+    "vue-i18n": "^9.12.1",
+    "vue-tsc": "^2.0.13"
+  },
+  "packageManager": "yarn@4.1.1"
+}
