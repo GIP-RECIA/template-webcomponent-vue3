@@ -84,7 +84,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "npm-run-all2": "^6.2.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.77.4",
     "standard-version": "^9.5.0",
