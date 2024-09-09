@@ -635,7 +635,7 @@ __metadata:
     dotenv-checker: "npm:^1.1.7"
     eslint: "npm:^8.57.0"
     eslint-plugin-playwright: "npm:^1.6.2"
-    eslint-plugin-vue: "npm:^9.27.0"
+    eslint-plugin-vue: "npm:^9.28.0"
     husky: "npm:8.0.3"
     jsdom: "npm:^24.1.1"
     lint-staged: "npm:^15.2.10"
@@ -3101,21 +3101,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.27.0":
-  version: 9.27.0
-  resolution: "eslint-plugin-vue@npm:9.27.0"
+"eslint-plugin-vue@npm:^9.28.0":
+  version: 9.28.0
+  resolution: "eslint-plugin-vue@npm:9.28.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     globals: "npm:^13.24.0"
     natural-compare: "npm:^1.4.0"
     nth-check: "npm:^2.1.1"
     postcss-selector-parser: "npm:^6.0.15"
-    semver: "npm:^7.6.0"
+    semver: "npm:^7.6.3"
     vue-eslint-parser: "npm:^9.4.3"
     xml-name-validator: "npm:^4.0.0"
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/b8ea74e0a57bd9faba71b362ddea34a6b866ccd7af42692a108d818feef27480df87e30261ffd790520006ff4dd808ecc1a1577a13713e3c66378e2214f3e1fb
+  checksum: 10/fd1fd1b2a73b2503e58e2d41024220ca072617ef626413efc2955ede857db91116f84974a4250c0e2dcedccca96dfcd7c7bf04a4af0f23ddb71321c2b6522598
   languageName: node
   linkType: hard
 
@@ -6107,6 +6107,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10/1b41018df2d8aca5a1db4729985e8e20428c650daea60fcd16e926e9383217d00f574fab92d79612771884a98d2ee2a1973f49d630829a8d54d6570defe62535
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.6.3":
+  version: 7.6.3
+  resolution: "semver@npm:7.6.3"
+  bin:
+    semver: bin/semver.js
+  checksum: 10/36b1fbe1a2b6f873559cd57b238f1094a053dbfd997ceeb8757d79d1d2089c56d1321b9f1069ce263dc64cfa922fa1d2ad566b39426fe1ac6c723c1487589e10
   languageName: node
   linkType: hard
 
